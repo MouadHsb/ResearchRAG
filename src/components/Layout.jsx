@@ -247,13 +247,32 @@ const Layout = ({ children }) => {
         </Box>
         
         {/* GitHub and bottom text section */}
-        <Box sx={{ p: 2, mt: 'auto', flexGrow: 0 }}>
+        <Box sx={{ p: 2, mt: 'auto', flexGrow: 0, mb: 2 }}>
           <Divider sx={{ mb: 2, borderColor: alpha(theme.palette.divider, 0.5) }} />
           <Button
             variant="outlined"
             startIcon={<GitHubIcon />}
             fullWidth
-            href="https://github.com/yourusername/rag-project"
+            href="https://github.com/MouadHsb/ResearchRAG"
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{ 
+              borderColor: alpha(theme.palette.primary.main, 0.5),
+              mb: 1,
+              '&:hover': {
+                borderColor: theme.palette.primary.main,
+                backgroundColor: alpha(theme.palette.primary.main, 0.1)
+              }
+            }}
+          >
+            View Frontend Repository
+          </Button>
+          
+          <Button
+            variant="outlined"
+            startIcon={<GitHubIcon />}
+            fullWidth
+            href="https://huggingface.co/spaces/MouadHSB/ResearchRAG"
             target="_blank"
             rel="noopener noreferrer"
             sx={{ 
@@ -264,14 +283,8 @@ const Layout = ({ children }) => {
               }
             }}
           >
-            View on GitHub
+            View Backend Repository
           </Button>
-          
-          <Box sx={{ mt: 0, p: 2, bgcolor: alpha(theme.palette.background.paper, 0.4), borderRadius: 2 }}>
-            <Typography variant="caption" color="text.secondary" component="div" sx={{ lineHeight: 1.5 }}>
-              Advanced Research Assistant with RAG capabilities for up to date credible academic research papers
-            </Typography>
-          </Box>
         </Box>
       </Box>
     </>
@@ -312,7 +325,7 @@ const Layout = ({ children }) => {
             <Tooltip title="GitHub Repository">
               <IconButton
                 color="inherit"
-                href="https://github.com/yourusername/rag-project"
+                href="https://github.com/MouadHsb/ResearchRAG"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{ 
@@ -329,6 +342,7 @@ const Layout = ({ children }) => {
             <Tooltip title="Open Terminal">
               <IconButton
                 color="inherit"
+                href="https://huggingface.co/spaces/MouadHSB/ResearchRAG"
                 sx={{ 
                   mx: 1,
                   '&:hover': {
