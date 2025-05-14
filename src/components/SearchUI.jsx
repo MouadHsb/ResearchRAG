@@ -293,7 +293,7 @@ const SearchUI = () => {
             }}>
               <MemoryIcon sx={{ fontSize: 48, color: 'primary.main', opacity: 0.7, mb: 2 }} />
               <Typography variant="h6" align="center" fontWeight={600}>
-                NexusRAG Search
+                RAG Search
               </Typography>
               <Typography variant="body2" align="center" color="text.secondary" sx={{ mt: 1, maxWidth: 300 }}>
                 Use intelligent search to find relevant research papers from ArXiv
